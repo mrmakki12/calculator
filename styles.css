@@ -1,0 +1,145 @@
+/* Resets */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Universals styles */
+:root {
+    --border-radius: 10px;
+}
+
+#slider::-webkit-slider-thumb {
+    background: #377f86;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.button:focus,
+#slider {
+    outline: none;
+}
+
+.screen,
+.button,
+.input {
+    border-radius: var(--border-radius);
+}
+
+.button,
+.container {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    border: none;
+}
+
+.theme-text,
+.slider-label {
+    font-size: 10px;
+}
+
+#slider {
+    width: 50px;
+    appearance: none;
+    background: gray;
+    border-radius: var(--border-radius);
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator layouts */
+
+/* Calc Container */
+.calculator {
+    width: 350px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px, 100px 400px;
+    grid-template-areas: 
+    "nav"
+    "screen"
+    "input";
+}
+
+/* Nav/theme selector */
+.theme {
+    display: flex;
+    grid-area: nav;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.theme-selector {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.theme-selector {
+    display: flex;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme-text {
+    margin-right: 10px;
+}
+
+
+/* Screen */
+.screen {
+    width: inherit;
+    overflow: hidden;
+    height: 80px;
+    grid-area: screen;
+    align-self: center;
+}
+
+/* Input */
+.input {
+    
+    padding: 15px;
+    height: 300px;
+    grid-area: input;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.reset,
+.equals {
+    width: calc(200% + 15px);
+    position: relative;
+}
+
+.equals {
+    left: calc(100% + 15px);
+}
+
+

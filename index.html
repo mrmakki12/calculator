@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <section class="calculator">
+            <nav class="theme">
+                <div class="calcTitle"><p>calc</p></div>
+                <div class="theme-selector">
+                    <p class='theme-text'>THEME</p>
+                    <div class="select">
+                        <label for='slider' class='slider-label'>1&nbsp; &nbsp; 2&nbsp; &nbsp; 3</label>
+                        <input type="range" name="slider" id="slider" min='1' max='3' value="1">
+                    </div>
+                </div>
+            </nav>
+            <section class="screen"></section>
+            <section class="input">
+                <button class="button number display">7</button>
+                <button class="button number display">8</button>
+                <button class="button number display">9</button>
+                <button class="button del">DEL</button>
+                <button class="button number display">4</button>
+                <button class="button number display">5</button>
+                <button class="button number display">6</button>
+                <button class="button plus display">+</button>
+                <button class="button number display">1</button>
+                <button class="button number display">2</button>
+                <button class="button number display">3</button>
+                <button class="button minus display">-</button>
+                <button class="button decimal display">.</button>
+                <button class="button number display">0</button>
+                <button class="button divide display">/</button>
+                <button class="button multiply display">x</button>
+                <button class="button reset">RESET</button>
+                <button class="button equals">=</button>
+            </section>
+        </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js" integrity="sha512-2/6UJO9SBO6ElzgeETlFUdHgMkhe+0QZH64KTtz18x6GA3Z6PpBHDJFvWrGCsXVQI1E2S/pB4Zqqdn0MEv5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='./logic.js'></script>
+    <script src='./styles.js'></script>
+</body>
+</html>
