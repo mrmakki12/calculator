@@ -23,7 +23,7 @@ displayableKeys.forEach((key) => {
 })
 
 const evaluate = () => {
-    const expression = screen1.innerHTML.toString()
+    const expression = screen1.innerHTML.toString().replace('x','*')
     const answer = math.evaluate(expression)
     screen.innerHTML = answer
 }
